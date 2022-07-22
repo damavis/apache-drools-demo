@@ -1,5 +1,5 @@
-Apache Drools Demo with Scala and a Template
-============================================
+Setting Daily Prices for Tennis Courts
+======================================
 
 Objective
 ---------
@@ -24,11 +24,9 @@ Demo use case: Tennis Court Price
 
 **Rules** are provided to set the **daily prices** of a tennis
 court. The price depends on the **date** and on the
-**market demand**, where the latter ranges from 0 to 100 (the
-larger the number the larger  the demand). So, the
-**facts** are the date and demand.
+**market demand**. So, the **facts** are the date and demand.
 
-As in every Drools applications, the facts fire rules
+As in every Drools application, the facts fire rules
 which set variables, which in this demo is **price change**.
 
 Run tests
