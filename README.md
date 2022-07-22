@@ -1,5 +1,5 @@
-Setting Daily Prices for Tennis Courts
-======================================
+Setting Daily Prices for Tennis Courts with Apache Drools
+=========================================================
 
 Objective
 ---------
