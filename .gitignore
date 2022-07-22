@@ -1,0 +1,6 @@
+.bsp/
+.idea/*
+docs/build/
+project/project/
+project/target/
+target/

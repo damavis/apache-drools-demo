@@ -1,0 +1,26 @@
+template header
+    Name
+    DemandLowerBound
+    DemandUpperBound
+    DateLowerBound
+    DateUpperBound
+    PriceChange
+
+import com.damavis.drools.entity.Facts;
+
+template "Rule template"
+
+rule "Rule_@{Name}"
+when
+    $facts: Facts(
+        Demand >= @{DemandLowerBound},
+        Demand <= @{DemandUpperBound},
+        Date >= "@{DateLowerBound}",
+        Date <= "@{DateUpperBound}",
+        true
+    )
+then
+    $facts.setPrice($facts.getPrice() + @{PriceChange});
+end
+
+end template
